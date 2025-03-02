@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.android.systemui.shared.clocks.ClockLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_gravity="center_vertical|center_horizontal" 
+    android:paddingStart="@dimen/_50sdp"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_gravity="center_horizontal" 
+    android:orientation="vertical"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+
+    <LinearLayout 
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" >
+
+        <TextClock 
+            android:textSize="80.0sp"
+            android:fontFamily="@font/evt"
+            android:textColor="@android:color/white" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:format12Hour="hh:"
+            android:format24Hour="kk:"  />
+
+        <TextClock 
+            android:textSize="80.0sp"
+            android:fontFamily="@font/evt"
+            android:textColor="@android:color/white" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:format12Hour="mm"
+            android:format24Hour="mm" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_minus10sdp"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+
+        <TextClock 
+            android:textSize="18.0sp"
+            android:fontFamily="@font/evt-date"
+            android:layout_width="match_parent" 
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white" 
+            android:format12Hour="EEEE dd MMMM"
+            android:format24Hour="EEEE dd MMMM" />
+
+    </LinearLayout>
+</LinearLayout>
+</com.android.systemui.shared.clocks.ClockLayout>

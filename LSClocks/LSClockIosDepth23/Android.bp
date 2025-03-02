@@ -1,0 +1,9 @@
+runtime_resource_overlay {
+    name: "LSClockIosDepth23",
+    sdk_version: "current",
+    product_specific: true,
+    certificate: "platform",
+    static_libs: [
+        "org.elixir.resources",
+    ],
+}

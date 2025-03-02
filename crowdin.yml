@@ -1,0 +1,3 @@
+files:
+  - source: rro_overlays/NavigationBarModeGesturalOverlayFS/res/values/strings.xml
+    translation: rro_overlays/NavigationBarModeGesturalOverlayFS/res/values
